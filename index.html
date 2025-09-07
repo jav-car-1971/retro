@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Personal 💾</title>
+    <style>
+        body {
+            background-color: #008080; /* Color turquesa de Windows 95 */
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0; /* Gris del sistema */
+            margin: 20px;
+            font-size: 16px;
+        }
+
+        .window {
+            background-color: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-bottom: 2px solid #000000;
+            border-right: 2px solid #000000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 2px;
+            margin-bottom: 20px;
+        }
+        
+        .title-bar {
+            background-color: #000080;
+            color: #ffffff;
+            padding: 5px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .title-buttons {
+            display: flex;
+            gap: 2px;
+        }
+
+        .title-button {
+            width: 15px;
+            height: 15px;
+            background-color: #c0c0c0;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-bottom: 1px solid #000000;
+            border-right: 1px solid #000000;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .content {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 15px;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            color: #000080;
+            border-bottom: 1px solid #000080;
+            padding-bottom: 5px;
+        }
+
+        .content p {
+            line-height: 1.5;
+        }
+
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #800080;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li::before {
+            content: "• ";
+            color: #800000;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <span>💻 C:\Mi_Sitio\index.html</span>
+            <div class="title-buttons">
+                <div class="title-button">_</div>
+                <div class="title-button">□</div>
+                <div class="title-button">X</div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>¡Bienvenido a mi Web!</h2>
+            <p>
+                Hola. Este es mi sitio personal. Navegá con cuidado, el ancho de banda es limitado. ¡Gracias por tu visita! Este sitio es un homenaje a los comienzos de la web. Todo el código es estático.
+            </p>
+            <p>
+                En esta página vas a encontrar información sobre mis proyectos y mis gustos.
+            </p>
+
+            <h2>Proyectos</h2>
+            <ul>
+                <li><a href="#">Calculadora</a>: Un proyecto simple con JavaScript.</li>
+                <li><a href="#">Generador de fractales</a>: Un experimento visual con `canvas`.</li>
+                <li><a href="#">Blog</a>: Mis pensamientos sobre tecnología retro.</li>
+            </ul>
+
+            <h2>Contacto</h2>
+            <p>
+                Si querés contactarme, podés enviarme un mensaje a <a href="mailto:usuario@email.com">usuario@email.com</a>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
